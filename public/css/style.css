@@ -1,0 +1,14 @@
+/* Custom reusable button */
+.btn {
+    @apply inline-block px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition;
+}
+
+/* Custom shadow */
+.shadow-card {
+    @apply shadow-lg border border-gray-200;
+}
+
+/* Example override */
+h1 {
+    font-family: 'Inter', sans-serif;
+}

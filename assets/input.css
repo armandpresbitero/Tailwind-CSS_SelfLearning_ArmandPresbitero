@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+/* Optional custom classes using Tailwind's @apply */
+.btn {
+    @apply inline-block px-4 py-2 rounded-md bg-blue-600 text-white hover:bg-blue-700 transition;
+}
+
+.card {
+    @apply bg-white rounded-xl shadow-sm border p-6;
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>McLaren Motorsport — Brand Concept</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Space Grotesk -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind Custom Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        papaya: "#FF8700",
+                        carbon: "#0F1113",
+                        fog: "#F4F4F5"
+                    },
+                    fontFamily: {
+                        sans: ["Space Grotesk", "ui-sans-serif", "system-ui"]
+                    },
+                    boxShadow: {
+                        card: "0 12px 30px rgba(0,0,0,0.15)"
+                    }
+                }
+            },
+            darkMode: "class"
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-carbon text-fog selection:bg-papaya selection:text-carbon">
+
+    <!-- Navbar -->
+    <header class="border-b border-white/10 bg-carbon/80 backdrop-blur sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2 group">
+                <span class="inline-block h-3 w-8 bg-papaya rounded-full group-hover:w-10 transition-all"></span>
+                <span class="font-extrabold tracking-wide">MCLAREN<span class="text-papaya">//</span>MOTORSPORT</span>
+            </a>
+            <button id="menuBtn" class="md:hidden px-3 py-2 rounded border border-white/10">Menu</button>
+            <ul id="mainNav" class="hidden md:flex items-center gap-6">
+                <li><a class="hover:text-papaya transition" href="#program">Program</a></li>
+                <li><a class="hover:text-papaya transition" href="#drivers">Drivers</a></li>
+                <li><a class="hover:text-papaya transition" href="#schedule">Schedule</a></li>
+                <li><a class="hover:text-papaya transition" href="#partners">Partners</a></li>
+            </ul>
+        </nav>
+        <ul id="mobileNav" class="md:hidden hidden px-4 pb-4 space-y-2">
+            <li><a class="block py-2 border-b border-white/10 hover:text-papaya" href="#program">Program</a></li>
+            <li><a class="block py-2 border-b border-white/10 hover:text-papaya" href="#drivers">Drivers</a></li>
+            <li><a class="block py-2 border-b border-white/10 hover:text-papaya" href="#schedule">Schedule</a></li>
+            <li><a class="block py-2 hover:text-papaya" href="#partners">Partners</a></li>
+        </ul>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+        <div
+            class="absolute inset-x-0 -top-24 h-64 bg-gradient-to-r from-papaya to-papaya/70 blur-3xl opacity-30 pointer-events-none">
+        </div>
+        <div class="max-w-6xl mx-auto px-4 py-16 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+            <div>
+                <p class="uppercase tracking-widest text-xs text-white/60">brand concept</p>
+                <h1 class="mt-3 text-4xl md:text-6xl font-black leading-tight">
+                    Papaya. Precision. <span class="text-papaya">Performance.</span>
+                </h1>
+                <p class="mt-4 text-white/80 max-w-prose">
+                    An energetic visual language for a unified McLaren motorsport presence—built on papaya accents,
+                    carbon surfaces, and bold, legible type. Designed for trackside screens, socials, and broadcast.
+                </p>
+                <div class="mt-6 flex flex-wrap gap-3">
+                    <a href="#program"
+                        class="inline-block px-5 py-3 rounded-xl bg-papaya text-carbon font-bold hover:opacity-90 transition">Explore
+                        Program</a>
+                    <a href="#brand-kit"
+                        class="inline-block px-5 py-3 rounded-xl border border-white/20 hover:border-papaya hover:text-papaya transition">Download
+                        Brand Kit</a>
+                </div>
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-card border border-white/10">
+                <img src="https://community.alteryx.com/t5/image/serverpage/image-id/227684i959836B858BC9F8C?v=v2"
+                    alt="McLaren Formula 1 car" class="w-full h-72 md:h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Program -->
+    <section id="program" class="py-14 md:py-20 bg-[#121417] border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-black">Program Highlights</h2>
+            <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <article class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
+                    <h3 class="font-bold text-xl">Visual System</h3>
+                    <p class="mt-2 text-white/70">Papaya edge, carbon base, high-contrast type. Consistent stripes,
+                        angle cuts, and grid rhythm.</p>
+                </article>
+                <article class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
+                    <h3 class="font-bold text-xl">Digital & Broadcast</h3>
+                    <p class="mt-2 text-white/70">Lower thirds, timing towers, sector bars, and social cut-downs that
+                        stay legible at speed.</p>
+                </article>
+                <article class="p-6 rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition">
+                    <h3 class="font-bold text-xl">Trackside Toolkit</h3>
+                    <p class="mt-2 text-white/70">Modular boards, garages, paddock signage, and quick-swap sponsor
+                        zones.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drivers -->
+    <section id="drivers" class="py-14 md:py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-end justify-between gap-4">
+                <h2 class="text-3xl md:text-4xl font-black">Driver Cards</h2>
+            </div>
+            <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Lando Norris -->
+                <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+                    <div class="relative">
+                        <img src="https://mclaren.bloomreach.io/delivery/resources/content/gallery/mclaren-racing/formula-1/2025/nsr/f1-75-live-m/web/2025_mcl_website_driver_page_header_lando_2.jpg"
+                            alt="Lando Norris" class="w-full h-44 object-cover object-top">
+                        <span
+                            class="absolute top-3 left-3 px-2 py-1 text-xs font-bold bg-papaya text-carbon rounded">#04</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-xl">Lando Norris</h3>
+                        <p class="text-white/70">British · Formula 1</p>
+                    </div>
+                </article>
+                <!-- Oscar Piastri -->
+                <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+                    <div class="relative">
+                        <img src="https://mclaren.bloomreach.io/delivery/resources/content/gallery/mclaren-racing/formula-1/2025/nsr/f1-75-live-m/web/2025_mcl_website_driver_page_header_oscar_2.jpg"
+                            alt="Oscar Piastri" class="w-full h-44 object-cover object-top">
+                        <span
+                            class="absolute top-3 left-3 px-2 py-1 text-xs font-bold bg-papaya text-carbon rounded">#81</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-xl">Oscar Piastri</h3>
+                        <p class="text-white/70">Australian · Formula 1</p>
+                    </div>
+                </article>
+                <!-- Example Extra Driver -->
+                <article class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+                    <div class="relative">
+                        <img src="https://sportsmedia.games/wp-content/uploads/2024/03/PATO-2024.jpg"
+                            alt="Pato O'Ward" class="w-full h-44 object-cover object-top">
+                        <span
+                            class="absolute top-3 left-3 px-2 py-1 text-xs font-bold bg-papaya text-carbon rounded">#5</span>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-xl">Pato O’Ward</h3>
+                        <p class="text-white/70">Mexican · IndyCar</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/10 text-white/60 text-sm">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© 2025 McLaren Motorsport. All rights reserved.</p>
+            <p>Designed with Tailwind CSS + Space Grotesk.</p>
+        </div>
+    </footer>
+
+    <script>
+        const btn = document.getElementById('menuBtn');
+        const main = document.getElementById('mainNav');
+        const mobile = document.getElementById('mobileNav');
+        btn?.addEventListener('click', () => {
+            main?.classList.toggle('hidden');
+            mobile?.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
